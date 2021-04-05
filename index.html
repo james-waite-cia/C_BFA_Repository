@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <!-- Things that the browser needs go in the head -->
+  <head>
+    <!-- Don't worry about the meta tags! -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Change the title! -->
+    <title>This Will be the Tab Title</title>
+    <!-- The link to an externa style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- Content that gets displayed goes in the body -->
+  <body>
+    <div class="main">
+      <!-- Textbox with text and dropshadow -->
+      <div
+        class="absolute dropShadow"
+        style="
+          top: 400px;
+          left: 300px;
+          width: 200px;
+          height: 290px;
+          background-color: #ececec;
+        "
+      >
+        <p>
+          <em><b>Synecdoche/</b></em> n. A figure of speech in which the name of
+          a part is used to stand for the whole (as hand for sailor),
+          <a href="#">the whole for a part </a>(as the law for police officer),
+          the specific for the general (as cutthroat for assassin), the general
+          for the specific (as thief for pickpocket), or the material for the
+          thing made from it (as steel for sword).
+        </p>
+      </div>
+
+      <!-- div with background image -->
+      <div
+        class="absolute backImage"
+        style="
+          top: 125px;
+          left: 155px;
+          width: 150px;
+          height: 150px;
+          background-image: url(../images/cloud01.png);
+        "
+      >
+        <p style="text-align: center">Always Already Thinking</p>
+      </div>
+
+      <!-- div with image -->
+      <div
+        class="absolute backImage"
+        style="
+          z-index: 0;
+          top: 270px;
+          left: 40px;
+          width: 330px;
+          height: 250px;
+          background-image: url(../images/jasper_johns_painted_bronze_ale_cans.jpg);
+        "
+      ></div>
+
+      <!-- div with audio controls -->
+      <div
+        class="absolute"
+        style="top: 190px; right: 25px; width: auto; height: auto"
+      >
+        <audio
+          controls
+          autoplay="true"
+          loop="true"
+          src="../audio/testAudio01.mp3"
+        ></audio>
+      </div>
+    </div>
+  </body>
+</html>
